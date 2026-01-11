@@ -7,13 +7,13 @@
   font-family: "Jost", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 
+#fargo-app{
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+  padding: 8px;
 }
-
 
   :root{
     --fc-border: rgba(0,0,0,.10);
@@ -130,6 +130,43 @@
     .fc-grid{ grid-template-columns: 1fr 1fr; gap: 12px; }
     .fc-race{ font-size: 52px; }
   }
+
+  @media (max-width: 520px){
+  .fc-card{
+    width: 100%;
+    padding: 16px;
+  }
+
+  .fc-title{
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .fc-input{
+    padding: 16px;
+    font-size: 20px;
+  }
+
+  .fc-out{
+    padding: 18px;
+    margin-top: 16px;
+  }
+
+  .fc-race{
+    font-size: 64px; /* make this the hero */
+  }
+
+  .fc-actions{
+    margin-top: 16px;
+    gap: 12px;
+  }
+
+  .fc-btn{
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+
 </style>
 
 <script>
